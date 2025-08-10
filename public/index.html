@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collaborative Whiteboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Collaborative Whiteboard</h1>
+      <div class="tools">
+        <button id="clearBtn">Clear Canvas</button>
+        <div class="session-info">
+          <span>Share this link to collaborate:</span>
+          <input type="text" id="sessionLink" readonly>
+          <button id="copyBtn">Copy</button>
+        </div>
+      </div>
+    </div>
+    <canvas id="whiteboard"></canvas>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
