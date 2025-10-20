@@ -28,6 +28,19 @@ body {
   margin-bottom: 20px;
 }
 
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.logo {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+}
+
 h1 {
   color: #333;
   text-align: center;
