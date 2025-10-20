@@ -102,5 +102,8 @@ io.on('connection', (socket) => {
     });
 });
 
-// Export the app for Vercel
-module.exports = app;
+// Export the handler for Vercel
+module.exports = (req, res) => {
+    // Handle the request
+    app(req, res);
+};

@@ -41,21 +41,21 @@ document.addEventListener('DOMContentLoaded', () => {
         forceNew: true
     });
 
-  // Debug connection status
-  socket.on('connect', () => {
-    console.log('Connected to server');
-  });
-  
-  socket.on('disconnect', () => {
-    console.log('Disconnected from server');
-  });
-  
-  socket.on('connect_error', (error) => {
-    console.error('Connection error:', error);
-  });
+    // Debug connection status
+    socket.on('connect', () => {
+        console.log('Connected to server');
+    });
 
-  // Join the session
-  socket.emit('joinSession', sessionId);
+    socket.on('disconnect', () => {
+        console.log('Disconnected from server');
+    });
+
+    socket.on('connect_error', (error) => {
+        console.error('Connection error:', error);
+    });
+
+    // Join the session
+    socket.emit('joinSession', sessionId);
 
     // Drawing functions
     function startDrawing(e) {
